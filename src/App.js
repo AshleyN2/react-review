@@ -11,7 +11,7 @@ const App = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    searchMovies("all");
+    searchMovies({API_URL});
   }, []);
 
   const searchMovies = async (title) => {
